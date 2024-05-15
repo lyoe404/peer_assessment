@@ -1,0 +1,460 @@
+/*Peer Assessment öğrenci değerlendirme sistemi*/
+/*Peer Assessment - profile_page için stil sayfasıdır. */
+/*Koddaki hata ve düzenlemeler için: tapur601@gmail.com*/
+
+
+/*Genel sayfa özellikleri*/
+html {
+    font-size: 6px;
+    font-family: "Montserrat";
+}
+
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+#control {
+    font-size: 10px;
+}
+
+.header {
+    background-color: #2C3E4F;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.menubar:hover {
+    transition: 0.4s;
+    color: powderblue;
+    cursor: pointer;
+}
+
+.header-logo {
+    height: auto;
+    margin: 0.5rem 0px;
+}
+
+#header-logo {
+    height: auto;
+    margin: 0.5rem 0px;
+    transition: margin-left 0.5s ease;
+}
+
+.header-logo img {
+    width: 8rem;
+    height: auto;
+}
+
+.header h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.scrollbar {
+    height: 100vh;
+    width: 0;
+    border: none;
+    border-right: 2px solid #2C3E4F;
+    border-radius: 1%;
+    position: absolute;
+    padding: 0;
+    top: 0px;
+    left: 0px;
+    background-color: #2C3E4F;
+    background-image: linear-gradient(to bottom, rgba(44, 62, 79, 0), #1A2734);
+    display: flex;
+    justify-content: left;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 2;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#scrollbar-logo-item {
+    width: 10rem;
+    height: auto;
+
+}
+
+
+.scrollbar-header {
+    display: block;
+    height: 12.8vh;
+    width: 25rem;
+    font-size: 3.8rem;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+
+.scrollbar-body {
+    display: block;
+    position: absolute;
+    top: 11rem;
+    width: 96%;
+    height: auto;
+
+}
+
+.scrollbar-body hr {
+    width: 90%;
+    font-weight: 800;
+    border-radius: 30%;
+}
+
+.user-info {
+    color: #fff;
+    text-align: left;
+    margin: 4rem;
+}
+
+.user-info p {
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.scrollbar-menu {
+
+    margin-top: 3rem;
+    height: auto;
+}
+
+
+.scrollbar-menu button {
+    display: inline-block;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+    width: 85%;
+    border: 2px solid #fff;
+    background-color: #253542;
+    color: #fff;
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 450;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
+
+.scrollbar-menu button:hover {
+    background-color: #B6A070;
+    color: black;
+    transition: 0.4s;
+}
+
+.scrollbar-menu button:active {
+    background-color: #7a6a49;
+    transition: .2s;
+}
+
+
+
+#scrollbar-closing-button {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    justify-content: right;
+}
+
+#scrollbar-closing-button button {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+#scrollbar-closing-button button:hover {
+    color: #B6A070;
+    transition: 0.3s;
+}
+
+#scrollbar-opening-button {
+    background-color: transparent;
+    border: none;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    font-weight: 2rem;
+    margin-right: 1rem;
+    margin-left: 2rem;
+    transition: .4s;
+}
+
+#menubar-item {
+    transition: 0.1s;
+}
+
+#menubar-item:hover {
+    color: #B6A070;
+}
+
+
+.logout {
+    margin-top: 7rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.logout i {
+    margin-right: 0.1rem;
+}
+
+#logout_button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    white-space: nowrap;
+}
+
+#logout_button:hover {
+    color: #B6A070;
+    cursor: pointer;
+}
+
+#logout_button:active {
+    color: #7a6a49;
+    cursor: pointer;
+}
+
+/*////////////////////PROFİL SAYFASI////////////////////*/
+
+.page-content {
+    display: block;
+    height: 90vh;
+    width: 100%;
+}
+
+#contentDiv {
+    transition: filter 0.5s ease;
+}
+
+.menubar-mobile {
+    display: none;
+}
+
+.headContainer {
+    background-color: #f5f5f5;
+    border: 1px solid rgba(200, 200, 200, 0.8);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    display: block;
+    width: 45rem;
+    height: auto;
+    margin-left: calc((100% - 45rem) / 2);
+    margin-right: calc((100% - 45rem) / 2);
+    margin-top: 4rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.user-profile-img {
+    width: 15rem;
+    display: inline-block;
+    height: auto;
+    padding: 0.5rem;
+}
+
+.user-profile-img img {
+    width: 99%;
+    border-radius: 50%;
+    border: 4px solid rgba(200, 200, 200, 0.532);
+}
+
+.user-overview {
+    width: 27.5rem;
+    padding: 0.5rem;
+    display: block;
+    float: right;
+    height: 15rem;
+    font-size: 2rem;
+    font-weight: 550;
+}
+
+.student-information-table {
+    display: block;
+    width: 60%;
+    margin-left: calc((100% - 60%) / 2);
+    margin-right: calc((100% - 60%) / 2);
+    background-color: #f5f5f5;
+    border: 1px solid rgba(200, 200, 200, 0.8);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 4rem;
+    padding: 1% 2%;
+    height: auto;
+}
+
+.student-information-table h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color:#2C3E4F;
+}
+
+.student-information-table .row {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 5vh;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 2%;
+}  
+
+.student-information-table .row p{
+    width: 47%;
+    padding: 0.6rem;
+    height: 4vh;
+    white-space: nowrap;
+    text-align: left;
+    margin: 0.5vh 0;
+    background-color:rgba(200, 200, 200, 0.8);
+    border: 2px solid rgba(200, 200, 200, 0.532);
+    border-radius: 5px;
+    color:#2C3E4F;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.left-column {
+    display: inline-block;
+}
+
+.right-column {
+    display: block;
+    float: right;
+}
+
+
+
+/*Ekran boyutu küçüldüğünde açılır menüyü yandan değil de yukarıdan açılır şekilde getiren kod bölümü./
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media (max-width: 900px) {
+
+    .page-content .menubar-mobile {
+        display: flex;
+        overflow: hidden;
+        white-space: nowrap;
+        align-items: center;
+        background-color: #B6A070;
+        width: 100%;
+        font-size: 1.4rem;
+        height: 0;
+        padding: 0;
+        color: #fff;
+        transition: height 0.4s;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #menubar-mobile-item {
+        display: inline-block;
+        margin: 0px;
+        margin-right: 2rem;
+    }
+
+    #menubar-mobile-item button {
+        background-color: transparent;
+        color: #fff;
+        font-weight: 500;
+        padding: 0.5rem;
+        border: none;
+    }
+
+    .mobile-menu-logo img {
+        width: 4rem;
+        height: auto;
+    }
+
+    .mobile-menu-logout button {
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-weight: 500;
+        margin-left: 2.5rem;
+    }
+
+    #menubar-mobile-item button:active {
+        text-decoration: underline;
+        transition: 0.4s;
+    }
+
+    .mobile-menu-logout button:active {
+        color: #2C3E4F;
+    }
+
+    .scrollbar {
+        display: none;
+    }
+
+
+
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Ekran boyutu düzenlemeleri için gerekli ayarlamalar.*/
+@media (min-width: 576px) {
+    html{
+        font-size: 7px;
+    }
+
+    
+}
+
+@media (min-width: 768px) {
+    html{
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 992px) {
+    html{
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 1200px) {
+    html{
+        font-size: 10px;
+    }
+}
+
+
+
+/*Bu ekran genişliğinde student-information-table sınıfındaki bileşenler yeniden optimize edilir.*/
+@media (max-width: 700px) {
+    .student-information-table{
+        height: 58vh;
+    }
+
+    .student-information-table .row p{
+        width: 90%;
+        float: left;
+        margin: 1.5rem 0;
+    }
+}
