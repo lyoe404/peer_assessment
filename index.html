@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer Assesment</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://libs.cdnjs.net/font-awesome/6.5.1/css/all.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <script src="script.js">
+    </script>
+
+    <!-- ------------------------------Sayfanın üst kısmındaki şeridin tüm elementlerinin olduğu kod bölümü--------------------------------------->
+
+    <div class="header container">
+
+        <div class="scrollbar-opening-button">
+            <button id="scrollbar-opening-button" onclick="toggleNav_andFloatRight()">
+                <!-- toggleNav_andFloatRight fonksiyonu için bkz. "script.js"-->
+                <i id="scrollbar-opening-button-icon" class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div class="header-logo" id="header-logo">
+            <img src="ankara-logo.png" alt="">
+        </div>
+
+        <h2 class="text-uppercase">
+            Ankara ÜNİVERSİTESİ
+        </h2>
+
+    </div>
+
+    <!-- ------------------------------Sayfanın üst kısmındaki şeridin tüm elementlerinin olduğu kod bölümü--------------------------------------->
+
+
+
+    <!-- ----------------------------------------------Yandan açılır menünün olduğu kod bölümü------------------------------------------------- -->
+
+    <div class="scrollbar container" id="scrollbar">
+
+
+        <div class="scrollbar-logo">
+            <img src="ankara-logo.png" alt="" id="scrollbar-logo-item">
+        </div>
+
+        <div class="scrollbar-header">
+            Peer <br>
+            Assessment
+        </div>
+
+
+        <div class="scrollbar-body">
+
+            <hr>
+
+            <!--Öğrenci bilgilerinin önizlemesinin bulunduğu bölüm-->
+            <div class="user-info">
+                <p> Umut Çağatay Tapur </p>
+                <p>22290636 </p>
+                <p>Yazılım Mühendisliği </p>
+            </div>
+            
+
+            <!--Açılır menüyü kapatma butonu-->
+            <div id="scrollbar-closing-button">
+                <button id="scrollbar-closing-button-item" onclick="reverseNav_andFloatLeft()">
+                    <!-- reverseNav_andFloatLeft fonksiyonu için bkz. "script.js"-->
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+            </div>
+            
+
+            <!--"PROFİLİM", "DERSLERİM", "DERS DEĞERLENDİR" gibi butonların bulunduğu kod bölümü, !!!!!!!!!!!!!ÖNEMLİ!!!!!!!!!!!!!!!!!!
+            burada buton işlevlerine onclick eklenerek gidilmesi gereken sayfaya yönlendirilmesi gerekiyor. -->
+            <div class="scrollbar-menu">
+                <ul>
+                    <li id="menu-item">
+                        <button id="profilim_button">PROFİLİM</button>
+                    </li>
+
+                    <li id="menu-item">
+                        <button id="derslerim_button">DERSLERİM</button>
+                    </li>
+
+                    <li id="menu-item">
+                        <button id="dersDegerlendir_button">DERS DEĞERLENDİR</button>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!--Çıkış butonu-->
+            <div class="logout">
+                <button id="logout_button"><i class="fa-solid fa-right-from-bracket"></i> Çıkış Yap</button>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!-- ---------------------------------------------------Yandan açılır menünün olduğu kod bölümü------------------------------------------- -->
+
+</body>
+
+</html>
