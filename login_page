@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer Assesment</title>
+
+    <link rel="stylesheet" href="login_page.css">
+
+    <link rel="stylesheet" href="https://libs.cdnjs.net/font-awesome/6.5.1/css/all.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <script src="login_page.js">
+    </script>
+
+
+    <div class="header container clearfix">
+        
+        <!--Sayfanın üst kısmındaki şerit ve içindekileri kapsar.-->
+        <div class="header-logo" id="header-logo">
+            <img src="ankara-logo.png" alt="">
+        </div>
+
+        <h2 class="text-uppercase">
+            Ankara ÜNİVERSİTESİ
+        </h2>
+
+        <div class="header-menu">
+            <ul>
+                <li id="header-menu-item">
+                    <a href="#">Hakkımızda</a>
+                </li>
+
+                <li id="header-menu-item">
+                    <a href="#">Bize Ulaşın</a>
+                </li>
+
+                <li id="header-menu-item">
+                    <a href="#">SSS</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Kalan sayfanın içeriğini kapsar.-->
+    <div class="page-content">
+        <div class="page-content-logo">
+            <img id="page-content-logo-item" src="ankara-logo.png" alt="">
+            <h2 class="text-uppercase">Peer <br> Assessment</h2>
+        </div>
+
+        <div class="input-content">
+            <div class="inputs">
+                <h3>Oturum Aç</h3>
+                <input type="text" id="TC_No_input" placeholder="TC. Kimlik No">
+                <input type="password" id="password_input" placeholder="Şifre">
+                <a href="#" id="sifremi_unuttum">Şifremi Unuttum</a>
+
+                <button id="logIn_button">Giriş Yap</button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
